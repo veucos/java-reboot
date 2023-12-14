@@ -1,0 +1,15 @@
+body {
+    width: 640px;
+    padding: 20px;
+    margin: auto;
+}
+table, th, td {
+  border: 1px solid;
+}
+.variant{
+    border-style: solid;
+    padding: 20px;
+}
+.center{
+    text-align: center;
+}
