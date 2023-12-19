@@ -4,4 +4,34 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>thirdFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>firstFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>secondFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--    </filter-mapping>-->
+
+
+    <!--
+      <servlet>
+        <servlet-name>mainServlet</servlet-name>
+        <servlet-class>ru.edu.MainServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+      </servlet>
+
+      <servlet-mapping>
+        <servlet-name>mainServlet</servlet-name>
+        <url-pattern>/users/*</url-pattern>
+      </servlet-mapping>
+    -->
+
 </web-app>
