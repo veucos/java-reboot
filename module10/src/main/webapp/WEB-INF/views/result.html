@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <title>Калькулятор доходности вклада</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/static/css/styles.css}">
+    <script th:src="@{/static/js/main.js}"></script>
+</head>
+<body>
+
+<div th:replace="fragments/fragments :: header"></div>
+
+<div id="content">
+    <h1>Результат</h1>
+    <h3><span th:text="|Итоговая сумма ${total} руб|"></span></h3>
+    <hr/>
+    <div class="center"><a href="javascript:window.history.back();">Назад</a></div>
+</div>
+
+<div class="footer" th:replace="fragments/fragments :: footer"></div>
+
+</body>
+</html>

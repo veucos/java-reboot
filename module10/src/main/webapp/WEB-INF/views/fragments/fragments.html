@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор доходности вклада</title>
+    <link rel="stylesheet" th:href="@{/static/css/styles.css}">
+</head>
+<body>
+
+<div class="div" th:fragment="header">
+    <h2>Калькулятор доходности вклада</h2>
+</div>
+
+<div class="footer" th:fragment="footer" th:text="|Copyright &copy ${#dates.year(#dates.createNow())}|">
+</div>
+
+</body>
+</html>

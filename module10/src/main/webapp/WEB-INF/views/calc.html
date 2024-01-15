@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <title>Калькулятор доходности вклада</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{/static/css/styles.css}">
+    <script th:src="@{/static/js/main.js}"></script>
+</head>
+<body>
+
+<div th:replace="fragments/fragments :: header"></div>
+
+<div id="content">
+    <div class="form">
+        <form method="post" th:action="@{/finance}" th:object="${deposit}">
+            <label>Сумма на момент открытия</label> <input min="0" placeholder="sum" step="1" th:field="*{sum}"
+                                                           type="number"/><br/>
+            <div class="error" th:errors="*{sum}" th:if="#{fields.hasErrors('sum')}"></div>
+
+            <label>Процентная ставка</label> <input max="100" min="1" placeholder="percent" step="1" th:field="*{percent}"
+                                                    type="number"/>
+            <div class="error" th:errors="*{percent}" th:if="#{fields.hasErrors('percent')}"></div>
+
+            <label>Количество лет</label> <input max="30" min="0" placeholder="years" step="1" th:field="*{years}"
+                                                 type="number"/>
+            <div class="error" th:errors="*{years}" th:if="#{fields.hasErrors('years')}"></div>
+
+            <input type="submit" value="Посчитать"/>
+        </form>
+    </div>
+</div>
+
+<div class="footer" th:replace="fragments/fragments :: footer"></div>
+
+</body>
+</html>

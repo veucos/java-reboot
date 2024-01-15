@@ -1,0 +1,35 @@
+body {
+    width: 640px;
+    padding: 20px;
+    margin: auto;
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: left;
+    margin: 5px;
+}
+input[type=number] {
+    display: inline-block;
+    float: left;
+    margin: 5px;
+    background: lightgray;
+}
+
+input[type=submit]{
+    background: lightblue;
+    margin: 5px;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 100px;
+}
+#content{
+  min-height: 200px;
+}
+.footer {
+  height: 50px;
+  margin-top: -50px;
+}
